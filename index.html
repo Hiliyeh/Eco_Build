@@ -2498,6 +2498,126 @@
             color: var(--wood-accent);
         }
 
+        /* ===================== LANGUAGE SELECTOR ===================== */
+        .lang-selector {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            margin-left: 32px;
+            padding: 4px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .lang-btn {
+            padding: 10px 14px;
+            background: transparent;
+            border: none;
+            color: var(--gray-500);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .lang-btn:hover {
+            color: var(--white);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .lang-btn.active {
+            color: var(--white);
+            background: var(--wood);
+            box-shadow: 0 2px 8px rgba(139, 90, 43, 0.3);
+        }
+
+        /* Mobile language selector - Premium Design */
+        .mobile-lang-selector {
+            display: none;
+            gap: 10px;
+            margin-top: 32px;
+            padding: 24px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--charcoal);
+            border-radius: 16px;
+        }
+
+        .mobile-lang-btn {
+            flex: 1;
+            padding: 16px 20px;
+            background: transparent;
+            border: 1px solid var(--charcoal);
+            color: var(--gray-400);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: none;
+            letter-spacing: 0.02em;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mobile-lang-btn:hover {
+            border-color: var(--wood-medium);
+            color: var(--white);
+            transform: translateY(-2px);
+            background: rgba(139, 90, 43, 0.2);
+        }
+
+        .mobile-lang-btn.active {
+            background: linear-gradient(135deg, var(--wood) 0%, var(--wood-medium) 100%);
+            border-color: var(--wood);
+            color: var(--white);
+            box-shadow: 0 8px 24px rgba(139, 90, 43, 0.25);
+        }
+
+        /* Language label above selector */
+        .mobile-lang-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--gray-600);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mobile-lang-label::before {
+            content: '';
+            width: 20px;
+            height: 1px;
+            background: var(--wood-medium);
+        }
+
+        @media (max-width: 1024px) {
+            .lang-selector {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-lang-selector {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .mobile-lang-buttons {
+                display: flex;
+                gap: 10px;
+            }
+        }
+
         /* ===================== REVEAL ANIMATIONS ===================== */
         .reveal {
             opacity: 0;
@@ -3370,10 +3490,15 @@
                     <img src="assets/images/logo-eco-scaled.png" alt="EcoBuild - Maisons préfabriquées écologiques">
                 </a>
                 <nav>
-                    <a href="#about">À propos</a>
-                    <a href="#process">Processus</a>
-                    <a href="#models">Modèles</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#about" data-i18n="nav.about">À propos</a>
+                    <a href="#process" data-i18n="nav.process">Processus</a>
+                    <a href="#models" data-i18n="nav.models">Modèles</a>
+                    <a href="#contact" data-i18n="nav.contact">Contact</a>
+                    <div class="lang-selector">
+                        <button class="lang-btn active" data-lang="fr">FR</button>
+                        <button class="lang-btn" data-lang="nl">NL</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
                 </nav>
                 <button class="mobile-menu-btn" aria-label="Menu" id="mobile-menu-btn">
                     <div class="menu-icon">
@@ -3410,35 +3535,43 @@
             <nav class="mobile-menu-nav">
                 <a href="#about" class="mobile-menu-link">
                     <span class="mobile-menu-number">01</span>
-                    <span class="mobile-menu-text">À propos</span>
+                    <span class="mobile-menu-text" data-i18n="nav.about">À propos</span>
                     <div class="mobile-menu-arrow">
                         <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </div>
                 </a>
                 <a href="#process" class="mobile-menu-link">
                     <span class="mobile-menu-number">02</span>
-                    <span class="mobile-menu-text">Processus</span>
+                    <span class="mobile-menu-text" data-i18n="nav.process">Processus</span>
                     <div class="mobile-menu-arrow">
                         <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </div>
                 </a>
                 <a href="#models" class="mobile-menu-link">
                     <span class="mobile-menu-number">03</span>
-                    <span class="mobile-menu-text">Modèles</span>
+                    <span class="mobile-menu-text" data-i18n="nav.models">Modèles</span>
                     <div class="mobile-menu-arrow">
                         <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </div>
                 </a>
                 <a href="#contact" class="mobile-menu-link">
                     <span class="mobile-menu-number">04</span>
-                    <span class="mobile-menu-text">Contact</span>
+                    <span class="mobile-menu-text" data-i18n="nav.contact">Contact</span>
                     <div class="mobile-menu-arrow">
                         <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </div>
                 </a>
             </nav>
+            <div class="mobile-lang-selector">
+                <div class="mobile-lang-label" data-i18n="mobileMenu.language">Langue</div>
+                <div class="mobile-lang-buttons">
+                    <button class="mobile-lang-btn lang-btn active" data-lang="fr">FR</button>
+                    <button class="mobile-lang-btn lang-btn" data-lang="nl">NL</button>
+                    <button class="mobile-lang-btn lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
             <div class="mobile-menu-footer">
-                <p class="mobile-menu-footer-text">Suivez-nous</p>
+                <p class="mobile-menu-footer-text" data-i18n="mobileMenu.followUs">Suivez-nous</p>
                 <div class="mobile-menu-social">
                     <a href="https://facebook.com" target="_blank" aria-label="Facebook">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
@@ -3474,7 +3607,7 @@
             <div class="hero-content">
                 <div class="hero-inner">
                     <div class="hero-eyebrow">
-                        <div class="hero-house-anim">
+                        <div class="hero-house-anim" data-i18n-aria="hero.eyebrow">
                             <svg viewBox="0 0 56 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <!-- Ground line -->
                                 <line class="house-ground" x1="0" y1="38" x2="56" y2="38" stroke="#C4956A" stroke-width="1"/>
@@ -3520,24 +3653,24 @@
                                 </defs>
                             </svg>
                         </div>
-                        <span class="hero-eyebrow-text">Macédoine du Nord</span>
+                        <span class="hero-eyebrow-text" data-i18n="hero.eyebrow">Macédoine du Nord</span>
                     </div>
 
                     <h1>
-                        <span class="hero-title-line"><span>Votre maison,</span></span>
-                        <span class="hero-title-line"><span>montée en <span class="highlight">12 heures</span></span></span>
+                        <span class="hero-title-line"><span data-i18n="hero.titleLine1">Votre maison,</span></span>
+                        <span class="hero-title-line"><span><span data-i18n="hero.titleLine2">montée en</span> <span class="highlight" data-i18n="hero.titleHighlight">12 heures</span></span></span>
                     </h1>
 
-                    <p class="hero-desc">Maisons préfabriquées écologiques. 95% construites en usine. Livrées et assemblées sur votre terrain. Clés en main.</p>
+                    <p class="hero-desc" data-i18n="hero.description">Maisons préfabriquées écologiques. 95% construites en usine. Livrées et assemblées sur votre terrain. Clés en main.</p>
 
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8M10 9H8"/></svg>
-                            Demander un devis
+                            <span data-i18n="hero.ctaQuote">Demander un devis</span>
                         </a>
                         <a href="#process" class="btn btn-outline">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
-                            Comment ça marche
+                            <span data-i18n="hero.ctaProcess">Comment ça marche</span>
                         </a>
                     </div>
                 </div>
@@ -3556,8 +3689,8 @@
                             </svg>
                         </div>
                         <div class="hero-stat-content">
-                            <div class="hero-stat-value">95%</div>
-                            <div class="hero-stat-label">Préfabriqué</div>
+                            <div class="hero-stat-value" data-i18n="hero.stats.prefab.value">95%</div>
+                            <div class="hero-stat-label" data-i18n="hero.stats.prefab.label">Préfabriqué</div>
                         </div>
                     </div>
                     <div class="hero-stat">
@@ -3568,8 +3701,8 @@
                             </svg>
                         </div>
                         <div class="hero-stat-content">
-                            <div class="hero-stat-value">8-12h</div>
-                            <div class="hero-stat-label">Assemblage</div>
+                            <div class="hero-stat-value" data-i18n="hero.stats.assembly.value">8-12h</div>
+                            <div class="hero-stat-label" data-i18n="hero.stats.assembly.label">Assemblage</div>
                         </div>
                     </div>
                     <div class="hero-stat">
@@ -3582,8 +3715,8 @@
                             </svg>
                         </div>
                         <div class="hero-stat-content">
-                            <div class="hero-stat-value">6</div>
-                            <div class="hero-stat-label">Modèles</div>
+                            <div class="hero-stat-value" data-i18n="hero.stats.models.value">6</div>
+                            <div class="hero-stat-label" data-i18n="hero.stats.models.label">Modèles</div>
                         </div>
                     </div>
                     <div class="hero-stat">
@@ -3597,8 +3730,8 @@
                             </svg>
                         </div>
                         <div class="hero-stat-content">
-                            <div class="hero-stat-value">1 jour</div>
-                            <div class="hero-stat-label">Clés en main</div>
+                            <div class="hero-stat-value" data-i18n="hero.stats.turnkey.value">1 jour</div>
+                            <div class="hero-stat-label" data-i18n="hero.stats.turnkey.label">Clés en main</div>
                         </div>
                     </div>
                 </div>
@@ -3613,15 +3746,15 @@
                 <div class="about-image reveal">
                     <img src="assets/images/project-terra-nova.png" alt="Maison Terra Nova EcoBuild - architecture contemporaine avec terrasse et bardage bois">
                     <div class="about-badge">
-                        <div class="about-badge-value">95%</div>
-                        <div class="about-badge-label">Hors-site</div>
+                        <div class="about-badge-value" data-i18n="about.badge.value">95%</div>
+                        <div class="about-badge-label" data-i18n="about.badge.label">Hors-site</div>
                     </div>
                 </div>
                 <div class="about-content">
                     <div class="section-header">
-                        <span class="section-tag reveal">Ce qu'on fait</span>
-                        <h2 class="section-title reveal">Des maisons écologiques,<br>pas des chantiers</h2>
-                        <p class="section-desc reveal">Fabrication en usine. Livraison sur terrain. Assemblage en une journée. Simple.</p>
+                        <span class="section-tag reveal" data-i18n="about.tag">Ce qu'on fait</span>
+                        <h2 class="section-title reveal" data-i18n="about.title" data-i18n-html>Des maisons écologiques,<br>pas des chantiers</h2>
+                        <p class="section-desc reveal" data-i18n="about.description">Fabrication en usine. Livraison sur terrain. Assemblage en une journée. Simple.</p>
                     </div>
                     <div class="about-features">
                         <div class="about-feature reveal">
@@ -3629,8 +3762,8 @@
                                 <img src="assets/images/icon-eco.png" alt="Durabilité">
                             </div>
                             <div class="about-feature-text">
-                                <h4>Sustainable & Energy Efficient</h4>
-                                <p>Matériaux écologiques et solutions énergétiques intelligentes.</p>
+                                <h4 data-i18n="about.features.eco.title">Durable & Éco-énergétique</h4>
+                                <p data-i18n="about.features.eco.description">Matériaux écologiques et solutions énergétiques intelligentes.</p>
                             </div>
                         </div>
                         <div class="about-feature reveal">
@@ -3638,8 +3771,8 @@
                                 <img src="assets/images/icon-time.png" alt="Rapidité">
                             </div>
                             <div class="about-feature-text">
-                                <h4>Fast & Hassle-Free</h4>
-                                <p>Modules préfabriqués. Assemblage en 8 à 12 heures.</p>
+                                <h4 data-i18n="about.features.fast.title">Rapide & Sans tracas</h4>
+                                <p data-i18n="about.features.fast.description">Modules préfabriqués. Assemblage en 8 à 12 heures.</p>
                             </div>
                         </div>
                         <div class="about-feature reveal">
@@ -3647,8 +3780,8 @@
                                 <img src="assets/images/icon-custom.png" alt="Personnalisation">
                             </div>
                             <div class="about-feature-text">
-                                <h4>Flexible & Customizable</h4>
-                                <p>Large choix de plans et finitions. Votre style.</p>
+                                <h4 data-i18n="about.features.custom.title">Flexible & Personnalisable</h4>
+                                <p data-i18n="about.features.custom.description">Large choix de plans et finitions. Votre style.</p>
                             </div>
                         </div>
                         <div class="about-feature reveal">
@@ -3656,8 +3789,8 @@
                                 <img src="assets/images/icon-quality.png" alt="Qualité">
                             </div>
                             <div class="about-feature-text">
-                                <h4>High-Quality & Durable</h4>
-                                <p>Fabrication contrôlée. Qualité garantie.</p>
+                                <h4 data-i18n="about.features.quality.title">Haute qualité & Durable</h4>
+                                <p data-i18n="about.features.quality.description">Fabrication contrôlée. Qualité garantie.</p>
                             </div>
                         </div>
                     </div>
@@ -3672,8 +3805,8 @@
 
         <div class="container">
             <div class="process-header">
-                <span class="section-tag reveal">Processus</span>
-                <h2 class="section-title reveal">4 étapes simples</h2>
+                <span class="section-tag reveal" data-i18n="process.tag">Processus</span>
+                <h2 class="section-title reveal" data-i18n="process.title">4 étapes simples</h2>
             </div>
 
             <div class="process-flow">
@@ -3699,14 +3832,14 @@
                                 <div class="step-ring-spin"></div>
                                 <div class="step-number">1</div>
                             </div>
-                            <div class="step-label">Étape 01</div>
-                            <h3 class="step-title">Design</h3>
+                            <div class="step-label" data-i18n="process.steps.design.label">Étape 01</div>
+                            <h3 class="step-title" data-i18n="process.steps.design.title">Design</h3>
                         </div>
                         <div class="step-card">
                             <div class="step-icon">
                                 <svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
                             </div>
-                            <p class="step-desc">Choisissez votre modèle. Personnalisez avec nos architectes.</p>
+                            <p class="step-desc" data-i18n="process.steps.design.description">Choisissez votre modèle. Personnalisez avec nos architectes.</p>
                         </div>
                     </div>
 
@@ -3719,14 +3852,14 @@
                                 <div class="step-ring-spin"></div>
                                 <div class="step-number">2</div>
                             </div>
-                            <div class="step-label">Étape 02</div>
-                            <h3 class="step-title">Fabrication</h3>
+                            <div class="step-label" data-i18n="process.steps.fabrication.label">Étape 02</div>
+                            <h3 class="step-title" data-i18n="process.steps.fabrication.title">Fabrication</h3>
                         </div>
                         <div class="step-card">
                             <div class="step-icon">
                                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
                             </div>
-                            <p class="step-desc">Construction en usine. Qualité contrôlée.</p>
+                            <p class="step-desc" data-i18n="process.steps.fabrication.description">Construction en usine. Qualité contrôlée.</p>
                         </div>
                     </div>
 
@@ -3739,14 +3872,14 @@
                                 <div class="step-ring-spin"></div>
                                 <div class="step-number">3</div>
                             </div>
-                            <div class="step-label">Étape 03</div>
-                            <h3 class="step-title">Assemblage</h3>
+                            <div class="step-label" data-i18n="process.steps.assembly.label">Étape 03</div>
+                            <h3 class="step-title" data-i18n="process.steps.assembly.title">Assemblage</h3>
                         </div>
                         <div class="step-card">
                             <div class="step-icon">
                                 <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
                             </div>
-                            <p class="step-desc">Livraison sur site. Montage par nos équipes.</p>
+                            <p class="step-desc" data-i18n="process.steps.assembly.description">Livraison sur site. Montage par nos équipes.</p>
                         </div>
                     </div>
 
@@ -3759,14 +3892,14 @@
                                 <div class="step-ring-spin"></div>
                                 <div class="step-number">4</div>
                             </div>
-                            <div class="step-label">Étape 04</div>
-                            <h3 class="step-title">Emménagez</h3>
+                            <div class="step-label" data-i18n="process.steps.movein.label">Étape 04</div>
+                            <h3 class="step-title" data-i18n="process.steps.movein.title">Emménagez</h3>
                         </div>
                         <div class="step-card">
                             <div class="step-icon">
                                 <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                             </div>
-                            <p class="step-desc">Raccordements finalisés. Vos clés en main.</p>
+                            <p class="step-desc" data-i18n="process.steps.movein.description">Raccordements finalisés. Vos clés en main.</p>
                         </div>
                     </div>
                 </div>
@@ -3774,24 +3907,24 @@
                 <!-- Result banner -->
                 <div class="process-result">
                     <div class="result-content">
-                        <div class="result-label">Résultat final</div>
+                        <div class="result-label" data-i18n="process.result.label">Résultat final</div>
                         <div class="result-text">
-                            <h3>Du terrain vide à maison habitable</h3>
-                            <p>En une seule journée, votre nouvelle vie commence</p>
+                            <h3 data-i18n="process.result.title">Du terrain vide à maison habitable</h3>
+                            <p data-i18n="process.result.subtitle">En une seule journée, votre nouvelle vie commence</p>
                         </div>
                     </div>
                     <div class="result-stats">
                         <div class="result-stat">
-                            <div class="result-stat-value">95%</div>
-                            <div class="result-stat-label">En usine</div>
+                            <div class="result-stat-value" data-i18n="process.result.stats.factory.value">95%</div>
+                            <div class="result-stat-label" data-i18n="process.result.stats.factory.label">En usine</div>
                         </div>
                         <div class="result-stat">
-                            <div class="result-stat-value">8-12h</div>
-                            <div class="result-stat-label">Sur site</div>
+                            <div class="result-stat-value" data-i18n="process.result.stats.onsite.value">8-12h</div>
+                            <div class="result-stat-label" data-i18n="process.result.stats.onsite.label">Sur site</div>
                         </div>
                         <div class="result-stat">
-                            <div class="result-stat-value">1 jour</div>
-                            <div class="result-stat-label">Total</div>
+                            <div class="result-stat-value" data-i18n="process.result.stats.total.value">1 jour</div>
+                            <div class="result-stat-label" data-i18n="process.result.stats.total.label">Total</div>
                         </div>
                     </div>
                 </div>
@@ -3804,8 +3937,8 @@
         <div class="container">
             <div class="models-header">
                 <div class="section-header section-header-compact">
-                    <span class="section-tag reveal">Nos modèles</span>
-                    <h2 class="section-title reveal">6 designs, personnalisables</h2>
+                    <span class="section-tag reveal" data-i18n="models.tag">Nos modèles</span>
+                    <h2 class="section-title reveal" data-i18n="models.title">6 designs, personnalisables</h2>
                 </div>
             </div>
             <div class="models-grid">
@@ -3878,12 +4011,12 @@
 
         <div class="container">
             <div class="contact-center">
-                <div class="contact-tag reveal">Contact</div>
-                <h2 class="contact-title reveal">Démarrez<br><span class="contact-title-accent">votre projet</span></h2>
+                <div class="contact-tag reveal" data-i18n="contact.tag">Contact</div>
+                <h2 class="contact-title reveal"><span data-i18n="contact.title">Démarrez</span><br><span class="contact-title-accent" data-i18n="contact.titleAccent">votre projet</span></h2>
 
                 <a href="https://suppia.be/ecobuild" class="contact-main-cta contact-main-cta-large reveal" id="ai-chat-link">
                     <div class="contact-cta-text">
-                        <div class="contact-cta-value">Parler à un conseiller</div>
+                        <div class="contact-cta-value" data-i18n="contact.cta">Parler à un conseiller</div>
                     </div>
                     <div class="contact-cta-arrow">
                         <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -3893,11 +4026,11 @@
                 <div class="contact-trust-points reveal">
                     <div class="contact-trust-item">
                         <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-                        <span>Réponse immédiate</span>
+                        <span data-i18n="contact.trust.immediate">Réponse immédiate</span>
                     </div>
                     <div class="contact-trust-item">
                         <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-                        <span>Sans engagement</span>
+                        <span data-i18n="contact.trust.noCommitment">Sans engagement</span>
                     </div>
                 </div>
             </div>
@@ -3912,24 +4045,24 @@
                     <a href="#" class="logo">
                         <img src="assets/images/logo-eco-scaled.png" alt="EcoBuild">
                     </a>
-                    <p>Maisons préfabriquées écologiques. Fabriquées en Macédoine, livrées en Europe.</p>
+                    <p data-i18n="footer.brand">Maisons préfabriquées écologiques. Fabriquées en Macédoine, livrées en Europe.</p>
                 </div>
                 <div class="footer-col">
                     <h4>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
-                        Navigation
+                        <span data-i18n="footer.navigation">Navigation</span>
                     </h4>
                     <ul>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#process">Processus</a></li>
-                        <li><a href="#models">Modèles</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+                        <li><a href="#process" data-i18n="nav.process">Processus</a></li>
+                        <li><a href="#models" data-i18n="nav.models">Modèles</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-                        Modèles
+                        <span data-i18n="footer.models">Modèles</span>
                     </h4>
                     <ul>
                         <li><a href="#models">Aurora</a></li>
@@ -3943,17 +4076,17 @@
                 <div class="footer-col">
                     <h4>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-                        Contact
+                        <span data-i18n="footer.contact">Contact</span>
                     </h4>
                     <ul>
-                        <li><a href="#contact">Démarrer un projet</a></li>
+                        <li><a href="#contact" data-i18n="footer.startProject">Démarrer un projet</a></li>
                         <li><a href="https://instagram.com/ecobuildeu" target="_blank">Instagram</a></li>
                     </ul>
-                    <p class="footer-location">Kadri Bazi 170, Skopje 1045<br>North Macedonia</p>
+                    <p class="footer-location" data-i18n="footer.location" data-i18n-html>Kadri Bazi 170, Skopje 1045<br>North Macedonia</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© <span id="current-year"></span> EcoBuild. Tous droits réservés.</p>
+                <p>© <span id="current-year"></span> EcoBuild. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
                 <div class="social-links">
                     <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
@@ -3964,7 +4097,7 @@
                 </div>
             </div>
             <div class="footer-credit">
-                <p>Conçu par <a href="https://www.linkedin.com/in/hiliyeh-bashir/" target="_blank" rel="noopener">Hiliyeh Bashir</a></p>
+                <p><span data-i18n="footer.designedBy">Conçu par</span> <a href="https://www.linkedin.com/in/hiliyeh-bashir/" target="_blank" rel="noopener">Hiliyeh Bashir</a></p>
             </div>
         </div>
     </footer>
@@ -3982,7 +4115,7 @@
                 </div>
                 <div class="model-modal-info">
                     <div class="model-modal-header">
-                        <span class="model-modal-tag">Modèle EcoBuild</span>
+                        <span class="model-modal-tag" data-i18n="models.modalTag">Modèle EcoBuild</span>
                         <h2 id="modal-name" class="model-modal-title"></h2>
                     </div>
                     <p id="modal-desc" class="model-modal-desc"></p>
@@ -3994,15 +4127,15 @@
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
                             </div>
                             <div class="modal-advisors-info">
-                                <span class="modal-advisors-status">5 conseillers en ligne</span>
-                                <p class="modal-advisors-note">Experts qualifiés disponibles</p>
+                                <span class="modal-advisors-status" data-i18n="models.advisors.status">5 conseillers en ligne</span>
+                                <p class="modal-advisors-note" data-i18n="models.advisors.note">Experts qualifiés disponibles</p>
                             </div>
                         </div>
                         <a href="https://suppia.be/ecobuild" class="model-modal-cta" id="modal-cta">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-                            <span>Parler à un conseiller</span>
+                            <span data-i18n="models.cta">Parler à un conseiller</span>
                         </a>
-                        <p class="model-modal-note">Personnalisable selon vos besoins</p>
+                        <p class="model-modal-note" data-i18n="models.note">Personnalisable selon vos besoins</p>
                     </div>
                 </div>
             </div>
@@ -4243,5 +4376,8 @@
             });
         });
     </script>
+
+    <!-- i18n Internationalization -->
+    <script src="js/i18n.js"></script>
 </body>
 </html>

@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "EcoBuild — Maisons Préfabriquées Écologiques | Montées en 12h",
+    "description": "Maisons préfabriquées écologiques, 95% construites en usine, assemblées sur votre terrain en 8-12 heures. Clés en main."
+  },
+  "nav": {
+    "about": "À propos",
+    "process": "Processus",
+    "models": "Modèles",
+    "contact": "Contact"
+  },
+  "mobileMenu": {
+    "close": "Fermer le menu",
+    "followUs": "Suivez-nous",
+    "language": "Langue"
+  },
+  "hero": {
+    "eyebrow": "Macédoine du Nord",
+    "titleLine1": "Votre maison,",
+    "titleLine2": "montée en",
+    "titleHighlight": "12 heures",
+    "description": "Maisons préfabriquées écologiques. 95% construites en usine. Livrées et assemblées sur votre terrain. Clés en main.",
+    "ctaQuote": "Demander un devis",
+    "ctaProcess": "Comment ça marche",
+    "stats": {
+      "prefab": {
+        "value": "95%",
+        "label": "Préfabriqué"
+      },
+      "assembly": {
+        "value": "8-12h",
+        "label": "Assemblage"
+      },
+      "models": {
+        "value": "6",
+        "label": "Modèles"
+      },
+      "turnkey": {
+        "value": "1 jour",
+        "label": "Clés en main"
+      }
+    }
+  },
+  "about": {
+    "tag": "Ce qu'on fait",
+    "title": "Des maisons écologiques,<br>pas des chantiers",
+    "description": "Fabrication en usine. Livraison sur terrain. Assemblage en une journée. Simple.",
+    "badge": {
+      "value": "95%",
+      "label": "Hors-site"
+    },
+    "features": {
+      "eco": {
+        "title": "Durable & Éco-énergétique",
+        "description": "Matériaux écologiques et solutions énergétiques intelligentes."
+      },
+      "fast": {
+        "title": "Rapide & Sans tracas",
+        "description": "Modules préfabriqués. Assemblage en 8 à 12 heures."
+      },
+      "custom": {
+        "title": "Flexible & Personnalisable",
+        "description": "Large choix de plans et finitions. Votre style."
+      },
+      "quality": {
+        "title": "Haute qualité & Durable",
+        "description": "Fabrication contrôlée. Qualité garantie."
+      }
+    }
+  },
+  "process": {
+    "tag": "Processus",
+    "title": "4 étapes simples",
+    "steps": {
+      "design": {
+        "label": "Étape 01",
+        "title": "Design",
+        "description": "Choisissez votre modèle. Personnalisez avec nos architectes."
+      },
+      "fabrication": {
+        "label": "Étape 02",
+        "title": "Fabrication",
+        "description": "Construction en usine. Qualité contrôlée."
+      },
+      "assembly": {
+        "label": "Étape 03",
+        "title": "Assemblage",
+        "description": "Livraison sur site. Montage par nos équipes."
+      },
+      "movein": {
+        "label": "Étape 04",
+        "title": "Emménagez",
+        "description": "Raccordements finalisés. Vos clés en main."
+      }
+    },
+    "result": {
+      "label": "Résultat final",
+      "title": "Du terrain vide à maison habitable",
+      "subtitle": "En une seule journée, votre nouvelle vie commence",
+      "stats": {
+        "factory": {
+          "value": "95%",
+          "label": "En usine"
+        },
+        "onsite": {
+          "value": "8-12h",
+          "label": "Sur site"
+        },
+        "total": {
+          "value": "1 jour",
+          "label": "Total"
+        }
+      }
+    }
+  },
+  "models": {
+    "tag": "Nos modèles",
+    "title": "6 designs, personnalisables",
+    "modalTag": "Modèle EcoBuild",
+    "advisors": {
+      "status": "5 conseillers en ligne",
+      "note": "Experts qualifiés disponibles"
+    },
+    "cta": "Parler à un conseiller",
+    "note": "Personnalisable selon vos besoins",
+    "items": {
+      "aurora": {
+        "name": "Aurora",
+        "description": "Design moderne avec grandes fenêtres panoramiques et finitions bois naturel.",
+        "features": "Grandes baies vitrées,Finitions bois naturel,Design contemporain,Lumière naturelle optimisée"
+      },
+      "terranova": {
+        "name": "Terra Nova",
+        "description": "Architecture contemporaine avec terrasse intégrée et bardage bois élégant.",
+        "features": "Terrasse intégrée,Bardage bois élégant,Architecture contemporaine,Espaces extérieurs"
+      },
+      "zenith": {
+        "name": "Zenith",
+        "description": "Modèle spacieux au design minimaliste. Lignes épurées et volumes généreux.",
+        "features": "Design minimaliste,Lignes épurées,Volumes généreux,Espaces ouverts"
+      },
+      "aria": {
+        "name": "Aria",
+        "description": "Format compact et élégant. Parfait pour les terrains plus intimes.",
+        "features": "Format compact,Design élégant,Optimisé petit terrain,Fonctionnel"
+      },
+      "serenity": {
+        "name": "Serenity",
+        "description": "Baies vitrées panoramiques pour une connexion totale avec la nature.",
+        "features": "Baies vitrées panoramiques,Connexion nature,Vue dégagée,Luminosité maximale"
+      },
+      "lumine": {
+        "name": "Luminé",
+        "description": "Design lumineux avec volumes généreux et espaces de vie ouverts.",
+        "features": "Design lumineux,Volumes généreux,Espaces de vie ouverts,Circulation fluide"
+      }
+    }
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Démarrez",
+    "titleAccent": "votre projet",
+    "cta": "Parler à un conseiller",
+    "trust": {
+      "immediate": "Réponse immédiate",
+      "noCommitment": "Sans engagement"
+    }
+  },
+  "footer": {
+    "brand": "Maisons préfabriquées écologiques. Fabriquées en Macédoine, livrées en Europe.",
+    "navigation": "Navigation",
+    "models": "Modèles",
+    "contact": "Contact",
+    "startProject": "Démarrer un projet",
+    "location": "Kadri Bazi 170, Skopje 1045<br>North Macedonia",
+    "rights": "Tous droits réservés.",
+    "designedBy": "Conçu par",
+    "followUs": "Suivez-nous"
+  },
+  "common": {
+    "close": "Fermer"
+  }
+}

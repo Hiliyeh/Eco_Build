@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "EcoBuild — Ecologische Prefabwoningen | Gemonteerd in 12u",
+    "description": "Ecologische prefabwoningen, 95% gebouwd in de fabriek, gemonteerd op uw terrein in 8-12 uur. Sleutel-op-de-deur."
+  },
+  "nav": {
+    "about": "Over ons",
+    "process": "Proces",
+    "models": "Modellen",
+    "contact": "Contact"
+  },
+  "mobileMenu": {
+    "close": "Menu sluiten",
+    "followUs": "Volg ons",
+    "language": "Taal"
+  },
+  "hero": {
+    "eyebrow": "Noord-Macedonië",
+    "titleLine1": "Uw woning,",
+    "titleLine2": "gemonteerd in",
+    "titleHighlight": "12 uur",
+    "description": "Ecologische prefabwoningen. 95% gebouwd in de fabriek. Geleverd en gemonteerd op uw terrein. Sleutel-op-de-deur.",
+    "ctaQuote": "Offerte aanvragen",
+    "ctaProcess": "Hoe werkt het",
+    "stats": {
+      "prefab": {
+        "value": "95%",
+        "label": "Prefab"
+      },
+      "assembly": {
+        "value": "8-12u",
+        "label": "Montage"
+      },
+      "models": {
+        "value": "6",
+        "label": "Modellen"
+      },
+      "turnkey": {
+        "value": "1 dag",
+        "label": "Sleutel-op-de-deur"
+      }
+    }
+  },
+  "about": {
+    "tag": "Wat we doen",
+    "title": "Ecologische woningen,<br>geen bouwwerven",
+    "description": "Fabricage in de fabriek. Levering op terrein. Montage in één dag. Simpel.",
+    "badge": {
+      "value": "95%",
+      "label": "Off-site"
+    },
+    "features": {
+      "eco": {
+        "title": "Duurzaam & Energiezuinig",
+        "description": "Ecologische materialen en slimme energieoplossingen."
+      },
+      "fast": {
+        "title": "Snel & Zorgeloos",
+        "description": "Prefab modules. Montage in 8 tot 12 uur."
+      },
+      "custom": {
+        "title": "Flexibel & Aanpasbaar",
+        "description": "Ruime keuze aan plannen en afwerkingen. Uw stijl."
+      },
+      "quality": {
+        "title": "Hoge kwaliteit & Duurzaam",
+        "description": "Gecontroleerde fabricage. Gegarandeerde kwaliteit."
+      }
+    }
+  },
+  "process": {
+    "tag": "Proces",
+    "title": "4 eenvoudige stappen",
+    "steps": {
+      "design": {
+        "label": "Stap 01",
+        "title": "Design",
+        "description": "Kies uw model. Personaliseer met onze architecten."
+      },
+      "fabrication": {
+        "label": "Stap 02",
+        "title": "Fabricage",
+        "description": "Bouw in de fabriek. Gecontroleerde kwaliteit."
+      },
+      "assembly": {
+        "label": "Stap 03",
+        "title": "Montage",
+        "description": "Levering op locatie. Montage door onze teams."
+      },
+      "movein": {
+        "label": "Stap 04",
+        "title": "Intrekken",
+        "description": "Aansluitingen afgerond. Uw sleutels in handen."
+      }
+    },
+    "result": {
+      "label": "Eindresultaat",
+      "title": "Van leeg terrein naar bewoonbare woning",
+      "subtitle": "In slechts één dag begint uw nieuwe leven",
+      "stats": {
+        "factory": {
+          "value": "95%",
+          "label": "In fabriek"
+        },
+        "onsite": {
+          "value": "8-12u",
+          "label": "Op locatie"
+        },
+        "total": {
+          "value": "1 dag",
+          "label": "Totaal"
+        }
+      }
+    }
+  },
+  "models": {
+    "tag": "Onze modellen",
+    "title": "6 designs, aanpasbaar",
+    "modalTag": "EcoBuild Model",
+    "advisors": {
+      "status": "5 adviseurs online",
+      "note": "Gekwalificeerde experts beschikbaar"
+    },
+    "cta": "Praat met een adviseur",
+    "note": "Aanpasbaar aan uw behoeften",
+    "items": {
+      "aurora": {
+        "name": "Aurora",
+        "description": "Modern design met grote panoramische ramen en natuurlijke houtafwerking.",
+        "features": "Grote glaspartijen,Natuurlijke houtafwerking,Hedendaags design,Geoptimaliseerd natuurlijk licht"
+      },
+      "terranova": {
+        "name": "Terra Nova",
+        "description": "Hedendaagse architectuur met geïntegreerd terras en elegante houten gevelbekleding.",
+        "features": "Geïntegreerd terras,Elegante houten gevelbekleding,Hedendaagse architectuur,Buitenruimtes"
+      },
+      "zenith": {
+        "name": "Zenith",
+        "description": "Ruim model met minimalistisch design. Strakke lijnen en royale volumes.",
+        "features": "Minimalistisch design,Strakke lijnen,Royale volumes,Open ruimtes"
+      },
+      "aria": {
+        "name": "Aria",
+        "description": "Compact en elegant formaat. Perfect voor kleinere terreinen.",
+        "features": "Compact formaat,Elegant design,Geoptimaliseerd voor klein terrein,Functioneel"
+      },
+      "serenity": {
+        "name": "Serenity",
+        "description": "Panoramische glaspartijen voor een totale verbinding met de natuur.",
+        "features": "Panoramische glaspartijen,Natuurverbinding,Vrij uitzicht,Maximale lichtinval"
+      },
+      "lumine": {
+        "name": "Luminé",
+        "description": "Lichtrijk design met royale volumes en open leefruimtes.",
+        "features": "Lichtrijk design,Royale volumes,Open leefruimtes,Vloeiende circulatie"
+      }
+    }
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Start",
+    "titleAccent": "uw project",
+    "cta": "Praat met een adviseur",
+    "trust": {
+      "immediate": "Directe reactie",
+      "noCommitment": "Vrijblijvend"
+    }
+  },
+  "footer": {
+    "brand": "Ecologische prefabwoningen. Gefabriceerd in Macedonië, geleverd in Europa.",
+    "navigation": "Navigatie",
+    "models": "Modellen",
+    "contact": "Contact",
+    "startProject": "Project starten",
+    "location": "Kadri Bazi 170, Skopje 1045<br>Noord-Macedonië",
+    "rights": "Alle rechten voorbehouden.",
+    "designedBy": "Ontworpen door",
+    "followUs": "Volg ons"
+  },
+  "common": {
+    "close": "Sluiten"
+  }
+}

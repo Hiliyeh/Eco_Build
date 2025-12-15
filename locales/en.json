@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "EcoBuild — Ecological Prefab Homes | Assembled in 12h",
+    "description": "Ecological prefab homes, 95% built in factory, assembled on your land in 8-12 hours. Turnkey."
+  },
+  "nav": {
+    "about": "About",
+    "process": "Process",
+    "models": "Models",
+    "contact": "Contact"
+  },
+  "mobileMenu": {
+    "close": "Close menu",
+    "followUs": "Follow us",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "North Macedonia",
+    "titleLine1": "Your home,",
+    "titleLine2": "assembled in",
+    "titleHighlight": "12 hours",
+    "description": "Ecological prefab homes. 95% built in factory. Delivered and assembled on your land. Turnkey.",
+    "ctaQuote": "Request a quote",
+    "ctaProcess": "How it works",
+    "stats": {
+      "prefab": {
+        "value": "95%",
+        "label": "Prefab"
+      },
+      "assembly": {
+        "value": "8-12h",
+        "label": "Assembly"
+      },
+      "models": {
+        "value": "6",
+        "label": "Models"
+      },
+      "turnkey": {
+        "value": "1 day",
+        "label": "Turnkey"
+      }
+    }
+  },
+  "about": {
+    "tag": "What we do",
+    "title": "Ecological homes,<br>not construction sites",
+    "description": "Factory manufacturing. Site delivery. One-day assembly. Simple.",
+    "badge": {
+      "value": "95%",
+      "label": "Off-site"
+    },
+    "features": {
+      "eco": {
+        "title": "Sustainable & Energy Efficient",
+        "description": "Ecological materials and smart energy solutions."
+      },
+      "fast": {
+        "title": "Fast & Hassle-Free",
+        "description": "Prefab modules. Assembly in 8 to 12 hours."
+      },
+      "custom": {
+        "title": "Flexible & Customizable",
+        "description": "Wide choice of plans and finishes. Your style."
+      },
+      "quality": {
+        "title": "High-Quality & Durable",
+        "description": "Controlled manufacturing. Guaranteed quality."
+      }
+    }
+  },
+  "process": {
+    "tag": "Process",
+    "title": "4 simple steps",
+    "steps": {
+      "design": {
+        "label": "Step 01",
+        "title": "Design",
+        "description": "Choose your model. Customize with our architects."
+      },
+      "fabrication": {
+        "label": "Step 02",
+        "title": "Manufacturing",
+        "description": "Factory construction. Quality controlled."
+      },
+      "assembly": {
+        "label": "Step 03",
+        "title": "Assembly",
+        "description": "On-site delivery. Installation by our teams."
+      },
+      "movein": {
+        "label": "Step 04",
+        "title": "Move In",
+        "description": "Connections finalized. Your keys in hand."
+      }
+    },
+    "result": {
+      "label": "Final result",
+      "title": "From empty land to livable home",
+      "subtitle": "In just one day, your new life begins",
+      "stats": {
+        "factory": {
+          "value": "95%",
+          "label": "In factory"
+        },
+        "onsite": {
+          "value": "8-12h",
+          "label": "On site"
+        },
+        "total": {
+          "value": "1 day",
+          "label": "Total"
+        }
+      }
+    }
+  },
+  "models": {
+    "tag": "Our models",
+    "title": "6 designs, customizable",
+    "modalTag": "EcoBuild Model",
+    "advisors": {
+      "status": "5 advisors online",
+      "note": "Qualified experts available"
+    },
+    "cta": "Talk to an advisor",
+    "note": "Customizable to your needs",
+    "items": {
+      "aurora": {
+        "name": "Aurora",
+        "description": "Modern design with large panoramic windows and natural wood finishes.",
+        "features": "Large bay windows,Natural wood finishes,Contemporary design,Optimized natural light"
+      },
+      "terranova": {
+        "name": "Terra Nova",
+        "description": "Contemporary architecture with integrated terrace and elegant wood cladding.",
+        "features": "Integrated terrace,Elegant wood cladding,Contemporary architecture,Outdoor spaces"
+      },
+      "zenith": {
+        "name": "Zenith",
+        "description": "Spacious model with minimalist design. Clean lines and generous volumes.",
+        "features": "Minimalist design,Clean lines,Generous volumes,Open spaces"
+      },
+      "aria": {
+        "name": "Aria",
+        "description": "Compact and elegant format. Perfect for smaller plots.",
+        "features": "Compact format,Elegant design,Optimized for small plot,Functional"
+      },
+      "serenity": {
+        "name": "Serenity",
+        "description": "Panoramic bay windows for a total connection with nature.",
+        "features": "Panoramic bay windows,Nature connection,Clear view,Maximum brightness"
+      },
+      "lumine": {
+        "name": "Luminé",
+        "description": "Bright design with generous volumes and open living spaces.",
+        "features": "Bright design,Generous volumes,Open living spaces,Fluid circulation"
+      }
+    }
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Start",
+    "titleAccent": "your project",
+    "cta": "Talk to an advisor",
+    "trust": {
+      "immediate": "Immediate response",
+      "noCommitment": "No commitment"
+    }
+  },
+  "footer": {
+    "brand": "Ecological prefab homes. Made in Macedonia, delivered in Europe.",
+    "navigation": "Navigation",
+    "models": "Models",
+    "contact": "Contact",
+    "startProject": "Start a project",
+    "location": "Kadri Bazi 170, Skopje 1045<br>North Macedonia",
+    "rights": "All rights reserved.",
+    "designedBy": "Designed by",
+    "followUs": "Follow us"
+  },
+  "common": {
+    "close": "Close"
+  }
+}
