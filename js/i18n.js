@@ -13,9 +13,9 @@ const I18n = (function() {
                 description: "Maisons préfabriquées écologiques, 95% construites en usine, assemblées sur votre terrain en 8-12 heures. Clés en main."
             },
             nav: {
-                about: "À propos",
-                process: "Processus",
-                models: "Modèles",
+                about: "Objectifs",
+                process: "Étapes",
+                models: "Produits",
                 contact: "Contact"
             },
             mobileMenu: {
@@ -124,9 +124,9 @@ const I18n = (function() {
                 description: "Ecologische prefabwoningen, 95% gebouwd in de fabriek, gemonteerd op uw terrein in 8-12 uur. Sleutel-op-de-deur."
             },
             nav: {
-                about: "Over ons",
-                process: "Proces",
-                models: "Modellen",
+                about: "Doelstellingen",
+                process: "Stappen",
+                models: "Producten",
                 contact: "Contact"
             },
             mobileMenu: {
@@ -235,9 +235,9 @@ const I18n = (function() {
                 description: "Ecological prefab homes, 95% built in factory, assembled on your land in 8-12 hours. Turnkey."
             },
             nav: {
-                about: "About",
-                process: "Process",
-                models: "Models",
+                about: "Objectives",
+                process: "Steps",
+                models: "Products",
                 contact: "Contact"
             },
             mobileMenu: {
