@@ -2228,6 +2228,12 @@
             box-shadow: 0 8px 24px rgba(139, 90, 43, 0.25);
         }
 
+        /* Remove desktop separator line on mobile buttons */
+        .mobile-lang-btn.lang-btn::before,
+        .mobile-lang-btn.lang-btn::after {
+            display: none;
+        }
+
         /* Language label above selector */
         .mobile-lang-label {
             font-size: 0.65rem;
