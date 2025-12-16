@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "EcoBuild — Ecological Prefab Homes | Assembled in 12h",
-    "description": "Ecological prefab homes, 95% built in factory, assembled on your land in 8-12 hours. Turnkey."
+    "title": "EcoBuild — Ecological Prefab Homes | Assembled in 48h",
+    "description": "Ecological prefab homes, 95% built in factory, assembled on your land in 48 hours. Turnkey."
   },
   "nav": {
     "about": "About",
@@ -18,7 +18,7 @@
     "eyebrow": "North Macedonia",
     "titleLine1": "Your home,",
     "titleLine2": "assembled in",
-    "titleHighlight": "12 hours",
+    "titleHighlight": "48 hours",
     "description": "Ecological prefab homes. 95% built in factory. Delivered and assembled on your land. Turnkey.",
     "ctaQuote": "Request a quote",
     "ctaProcess": "How it works",
@@ -28,7 +28,7 @@
         "label": "Prefab"
       },
       "assembly": {
-        "value": "8-12h",
+        "value": "48h",
         "label": "Assembly"
       },
       "models": {
@@ -56,7 +56,7 @@
       },
       "fast": {
         "title": "Fast & Hassle-Free",
-        "description": "Prefab modules. Assembly in 8 to 12 hours."
+        "description": "Prefab modules. Assembly in 48 hours."
       },
       "custom": {
         "title": "Flexible & Customizable",
@@ -103,7 +103,7 @@
           "label": "In factory"
         },
         "onsite": {
-          "value": "8-12h",
+          "value": "48h",
           "label": "On site"
         },
         "total": {

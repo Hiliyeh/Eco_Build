@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "EcoBuild — Maisons Préfabriquées Écologiques | Montées en 12h",
-    "description": "Maisons préfabriquées écologiques, 95% construites en usine, assemblées sur votre terrain en 8-12 heures. Clés en main."
+    "title": "EcoBuild — Maisons Préfabriquées Écologiques | Montées en 48h",
+    "description": "Maisons préfabriquées écologiques, 95% construites en usine, assemblées sur votre terrain en 48 heures. Clés en main."
   },
   "nav": {
     "about": "À propos",
@@ -18,7 +18,7 @@
     "eyebrow": "Macédoine du Nord",
     "titleLine1": "Votre maison,",
     "titleLine2": "montée en",
-    "titleHighlight": "12 heures",
+    "titleHighlight": "48 heures",
     "description": "Maisons préfabriquées écologiques. 95% construites en usine. Livrées et assemblées sur votre terrain. Clés en main.",
     "ctaQuote": "Demander un devis",
     "ctaProcess": "Comment ça marche",
@@ -28,7 +28,7 @@
         "label": "Préfabriqué"
       },
       "assembly": {
-        "value": "8-12h",
+        "value": "48h",
         "label": "Assemblage"
       },
       "models": {
@@ -56,7 +56,7 @@
       },
       "fast": {
         "title": "Rapide & Sans tracas",
-        "description": "Modules préfabriqués. Assemblage en 8 à 12 heures."
+        "description": "Modules préfabriqués. Assemblage en 48 heures."
       },
       "custom": {
         "title": "Flexible & Personnalisable",
@@ -103,7 +103,7 @@
           "label": "En usine"
         },
         "onsite": {
-          "value": "8-12h",
+          "value": "48h",
           "label": "Sur site"
         },
         "total": {

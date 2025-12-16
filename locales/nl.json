@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "EcoBuild — Ecologische Prefabwoningen | Gemonteerd in 12u",
-    "description": "Ecologische prefabwoningen, 95% gebouwd in de fabriek, gemonteerd op uw terrein in 8-12 uur. Sleutel-op-de-deur."
+    "title": "EcoBuild — Ecologische Prefabwoningen | Gemonteerd in 48u",
+    "description": "Ecologische prefabwoningen, 95% gebouwd in de fabriek, gemonteerd op uw terrein in 48 uur. Sleutel-op-de-deur."
   },
   "nav": {
     "about": "Over ons",
@@ -18,7 +18,7 @@
     "eyebrow": "Noord-Macedonië",
     "titleLine1": "Uw woning,",
     "titleLine2": "gemonteerd in",
-    "titleHighlight": "12 uur",
+    "titleHighlight": "48 uur",
     "description": "Ecologische prefabwoningen. 95% gebouwd in de fabriek. Geleverd en gemonteerd op uw terrein. Sleutel-op-de-deur.",
     "ctaQuote": "Offerte aanvragen",
     "ctaProcess": "Hoe werkt het",
@@ -28,7 +28,7 @@
         "label": "Prefab"
       },
       "assembly": {
-        "value": "8-12u",
+        "value": "48u",
         "label": "Montage"
       },
       "models": {
@@ -56,7 +56,7 @@
       },
       "fast": {
         "title": "Snel & Zorgeloos",
-        "description": "Prefab modules. Montage in 8 tot 12 uur."
+        "description": "Prefab modules. Montage in 48 uur."
       },
       "custom": {
         "title": "Flexibel & Aanpasbaar",
@@ -103,7 +103,7 @@
           "label": "In fabriek"
         },
         "onsite": {
-          "value": "8-12u",
+          "value": "48u",
           "label": "Op locatie"
         },
         "total": {

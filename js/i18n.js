@@ -9,8 +9,8 @@ const I18n = (function() {
     const translations = {
         fr: {
             meta: {
-                title: "EcoBuild — Maisons Préfabriquées Écologiques | Montées en 12h",
-                description: "Maisons préfabriquées écologiques, 95% construites en usine, assemblées sur votre terrain en 8-12 heures. Clés en main."
+                title: "EcoBuild — Maisons Préfabriquées Écologiques | Montées en 48h",
+                description: "Maisons préfabriquées écologiques, 95% construites en usine, assemblées sur votre terrain en 48 heures. Clés en main."
             },
             nav: {
                 about: "Objectifs",
@@ -27,13 +27,13 @@ const I18n = (function() {
                 eyebrow: "Macédoine du Nord",
                 titleLine1: "Votre maison,",
                 titleLine2: "montée en",
-                titleHighlight: "12 heures",
+                titleHighlight: "48 heures",
                 description: "Maisons préfabriquées écologiques. 95% construites en usine. Livrées et assemblées sur votre terrain. Clés en main.",
                 ctaQuote: "Demander un devis",
                 ctaProcess: "Comment ça marche",
                 stats: {
                     prefab: { value: "95%", label: "Préfabriqué" },
-                    assembly: { value: "8-12h", label: "Assemblage" },
+                    assembly: { value: "48h", label: "Assemblage" },
                     models: { value: "6", label: "Modèles" },
                     turnkey: { value: "1 jour", label: "Clés en main" }
                 }
@@ -50,7 +50,7 @@ const I18n = (function() {
                     },
                     fast: {
                         title: "Rapide & Sans tracas",
-                        description: "Modules préfabriqués. Assemblage en 8 à 12 heures."
+                        description: "Modules préfabriqués. Assemblage en 48 heures."
                     },
                     custom: {
                         title: "Flexible & Personnalisable",
@@ -77,7 +77,7 @@ const I18n = (function() {
                     subtitle: "En une seule journée, votre nouvelle vie commence",
                     stats: {
                         factory: { value: "95%", label: "En usine" },
-                        onsite: { value: "8-12h", label: "Sur site" },
+                        onsite: { value: "48h", label: "Sur site" },
                         total: { value: "1 jour", label: "Total" }
                     }
                 }
@@ -120,8 +120,8 @@ const I18n = (function() {
         },
         nl: {
             meta: {
-                title: "EcoBuild — Ecologische Prefabwoningen | Gemonteerd in 12u",
-                description: "Ecologische prefabwoningen, 95% gebouwd in de fabriek, gemonteerd op uw terrein in 8-12 uur. Sleutel-op-de-deur."
+                title: "EcoBuild — Ecologische Prefabwoningen | Gemonteerd in 48u",
+                description: "Ecologische prefabwoningen, 95% gebouwd in de fabriek, gemonteerd op uw terrein in 48 uur. Sleutel-op-de-deur."
             },
             nav: {
                 about: "Doelstellingen",
@@ -138,13 +138,13 @@ const I18n = (function() {
                 eyebrow: "Noord-Macedonië",
                 titleLine1: "Uw woning,",
                 titleLine2: "gemonteerd in",
-                titleHighlight: "12 uur",
+                titleHighlight: "48 uur",
                 description: "Ecologische prefabwoningen. 95% gebouwd in de fabriek. Geleverd en gemonteerd op uw terrein. Sleutel-op-de-deur.",
                 ctaQuote: "Offerte aanvragen",
                 ctaProcess: "Hoe werkt het",
                 stats: {
                     prefab: { value: "95%", label: "Prefab" },
-                    assembly: { value: "8-12u", label: "Montage" },
+                    assembly: { value: "48u", label: "Montage" },
                     models: { value: "6", label: "Modellen" },
                     turnkey: { value: "1 dag", label: "Sleutel-op-de-deur" }
                 }
@@ -161,7 +161,7 @@ const I18n = (function() {
                     },
                     fast: {
                         title: "Snel & Zorgeloos",
-                        description: "Prefab modules. Montage in 8 tot 12 uur."
+                        description: "Prefab modules. Montage in 48 uur."
                     },
                     custom: {
                         title: "Flexibel & Aanpasbaar",
@@ -188,7 +188,7 @@ const I18n = (function() {
                     subtitle: "In slechts één dag begint uw nieuwe leven",
                     stats: {
                         factory: { value: "95%", label: "In fabriek" },
-                        onsite: { value: "8-12u", label: "Op locatie" },
+                        onsite: { value: "48u", label: "Op locatie" },
                         total: { value: "1 dag", label: "Totaal" }
                     }
                 }
@@ -231,8 +231,8 @@ const I18n = (function() {
         },
         en: {
             meta: {
-                title: "EcoBuild — Ecological Prefab Homes | Assembled in 12h",
-                description: "Ecological prefab homes, 95% built in factory, assembled on your land in 8-12 hours. Turnkey."
+                title: "EcoBuild — Ecological Prefab Homes | Assembled in 48h",
+                description: "Ecological prefab homes, 95% built in factory, assembled on your land in 48 hours. Turnkey."
             },
             nav: {
                 about: "Objectives",
@@ -249,13 +249,13 @@ const I18n = (function() {
                 eyebrow: "North Macedonia",
                 titleLine1: "Your home,",
                 titleLine2: "assembled in",
-                titleHighlight: "12 hours",
+                titleHighlight: "48 hours",
                 description: "Ecological prefab homes. 95% built in factory. Delivered and assembled on your land. Turnkey.",
                 ctaQuote: "Request a quote",
                 ctaProcess: "How it works",
                 stats: {
                     prefab: { value: "95%", label: "Prefab" },
-                    assembly: { value: "8-12h", label: "Assembly" },
+                    assembly: { value: "48h", label: "Assembly" },
                     models: { value: "6", label: "Models" },
                     turnkey: { value: "1 day", label: "Turnkey" }
                 }
@@ -272,7 +272,7 @@ const I18n = (function() {
                     },
                     fast: {
                         title: "Fast & Hassle-Free",
-                        description: "Prefab modules. Assembly in 8 to 12 hours."
+                        description: "Prefab modules. Assembly in 48 hours."
                     },
                     custom: {
                         title: "Flexible & Customizable",
@@ -299,7 +299,7 @@ const I18n = (function() {
                     subtitle: "In just one day, your new life begins",
                     stats: {
                         factory: { value: "95%", label: "In factory" },
-                        onsite: { value: "8-12h", label: "On site" },
+                        onsite: { value: "48h", label: "On site" },
                         total: { value: "1 day", label: "Total" }
                     }
                 }
