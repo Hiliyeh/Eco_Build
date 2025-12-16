@@ -3870,7 +3870,7 @@
         const modelCards = document.querySelectorAll('.model-card');
 
         function openModal(card) {
-            const image = card.dataset.image;
+            const image = card.querySelector('.model-image img').src;
             const name = card.dataset.name;
             const desc = card.dataset.desc;
             const features = card.dataset.features ? card.dataset.features.split(',') : [];
